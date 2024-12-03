@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>带你云游我的家乡</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: url(image/背景.jpg);
+    }
+    .header{
+        margin-top: 15px;
+    }
+    .header>img{
+        float: left;
+        margin-left: 90px;
+    }
+    
+    
+    .sign{
+        width: 100%;
+        height: 35px;
+        background-color: rgb(51, 50, 58);
+    }
+    .sign>ul{
+        float: right;
+        margin-right: 300px;
+    }
+    .sign>ul>li {
+        height: 35px;
+        float: left;
+        list-style: none;
+        color: aliceblue;
+    }
+    /* 导航条部分 */
+    .nav{
+    width: 100%;
+    height: 75px;
+    background-color: rgb(48, 55, 111);    
+    }
+   a{
+    text-decoration: none;
+    color: rgb(20, 39, 55);
+    }
+.nav>ul{
+    margin-left: 600px;
+}
+.nav>ul>li{
+height: 75px;
+padding: 0 20px;
+float: left;
+list-style: none;
+}
+.nav>ul>li>a{
+    color: aliceblue;
+    line-height: 81px;
+}
+
+/* 手风琴部分 */
+.shell{
+    width: 90%;
+    height: 600px;
+    display: flex;
+    margin-top: 400px;
+   
+
+}
+.box{
+    flex:1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 20px;
+    box-shadow: 10px 10px 20px rgba(0,0,0, .5);
+    border-radius: 20px;
+    border: 10px solid #fff;
+    background-color: #fff;
+}
+.box>img{
+    width: 200%;
+    height: 85%;
+    object-fit: cover;
+    transition: .5s;
+}
+.box>span{
+    font: 200 45px;
+    text-align: center;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.box:hover{
+    flex-basis: 40%;
+}
+.box:hover>image{
+    width: 100%;
+    height: 100%;
+}
+
+    </style>
+</head>
+<body>
+
+
+<div class="header">
+       <img src="image/导航2.jpg" alt="">
+       <img src="image/导航.jpg" alt="">
+        <div class="sign">
+            <ul>
+                <li>好客山东欢迎您！</li>
+            </ul>
+        </div>
+    <div class="nav">            
+    <ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./web/survey.html">地理概况</a></li>
+        <li><a href="./web/scenery.html">大美风光</a></li>
+        <li><a href="./web/food.html">美食风味</a></li>
+        <li><a href="./web/history.html">历史文化</a></li>
+        <li><a href="https://yanjiayi959.github.io/604web/">返回寝室主页</a></li>
+    </ul>
+    </div>
+</div>
+
+
+<div class="shell">
+  <div class="box">
+    <img src="image/自然环境.jpg" alt="">
+    <span>碧水青山，生态画卷</span>
+  </div>
+  <div class="box">
+    <img src="image/美景.webp" alt="">
+    <span>齐鲁大地，风光旖旎</span>
+  </div>
+  <div class="box">
+    <img src="image/美食.jpg" alt="">
+    <span>鲁菜飘香，味蕾盛宴</span>
+  </div>
+  <div class="box">
+    <img src="image/历史文化.png" alt="">
+    <span>千年传承，文明璀璨</span>
+  </div>
+
+
+
+
+</div>
+    
+
+
+</body>
+</html> 

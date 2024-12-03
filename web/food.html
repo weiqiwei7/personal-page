@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食风味</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header{
+        margin-top: 15px;
+    }
+    .header>img{
+        float: left;
+        margin-left: 90px;
+    }    
+    .sign{
+        width: 100%;
+        height: 35px;
+        background-color: rgb(51, 50, 58);
+    }
+    .sign>ul{
+        float: right;
+        margin-right: 300px;
+    }
+    .sign>ul>li {
+        height: 35px;
+        float: left;
+        list-style: none;
+        color: aliceblue;
+    }
+    /* 导航条部分 */
+    .nav{
+    width: 100%;
+    height: 75px;
+    background-color: rgb(48, 55, 111);    
+    }
+   a{
+    text-decoration: none;
+    color: rgb(20, 39, 55);
+    }
+.nav>ul{
+    margin-left: 600px;
+}
+.nav>ul>li{
+height: 75px;
+padding: 0 20px;
+float: left;
+list-style: none;
+}
+.nav>ul>li>a{
+    color: aliceblue;
+    line-height: 81px;
+}
+.conti>.titl{
+    width: 80%;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 60px;
+    background-color: rgba(78, 84, 161, 0.884);
+    color: aliceblue;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.shell{
+    position: relative;
+    width: 60vw;
+    height: 40vw;
+    max-width: 470px;
+    max-height: 355px;
+    margin: 0 auto;
+    color: aliceblue;
+    perspective: 1000px;
+    transform-origin: center;
+    
+}
+.shell>.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: translateZ(-30vw) rotateY(0);
+    animation: carousel 9s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+.shell>.content>.item{
+    position: absolute;
+    width: 60vw;
+    height: 40vw;
+    max-width: 470px;
+    max-height: 355px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    border-radius: 6px;
+    background-size: cover;
+    
+}
+.item:nth-child(1){
+    background-image: url(../image/糖醋鲤鱼.jpg);
+    transform: rotateY(0) translateZ(35vw);
+}
+.item:nth-child(2){
+    background-image: url(../image/酥锅.jpg);
+    transform: rotateY(120deg) translateZ(35vw);
+}
+.item:nth-child(3){
+    background-image: url(../image/甜沫.jpg);
+    transform: rotateY(240deg) translateZ(35vw);
+}
+
+@keyframes carousel{
+    0%,
+    17.5%{
+        transform: translateZ(-35vw) rotateY(0);
+    }
+    27.5%,
+    45%{
+        transform: translateZ(-35vw) rotateY(-120deg);
+    }
+    55%,
+    72.5%{
+        transform: translateZ(-35vw) rotateY(-240deg);
+    }
+    82.5%,
+    100%{
+        transform: translateZ(-35vw) rotateY(-360deg);
+    }
+}
+
+.cont{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.cont>.tu{
+   text-align: center;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="../image/导航2.jpg" alt="">
+        <img src="../image/导航.jpg" alt="">
+         <div class="sign">
+             <ul>
+                 <li>好客山东欢迎您！</li>
+             </ul>
+         </div>
+     <div class="nav">            
+     <ul>
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="./survey.html">地理概况</a></li>
+        <li><a href="./scenery.html">大美风光</a></li>
+        <li><a href="./food.html">美食风味</a></li>
+        <li><a href="./history.html">历史文化</a></li>
+        <li><a href="https://yanjiayi959.github.io/604web/">返回寝室主页</a></li>
+     </ul>
+     </div>
+ </div>
+
+
+ <div class="conti">
+    <div class="titl">美食盛宴</div>
+ </div>
+
+<div class="shell">
+    <div class="content">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</div>
+
+<div class="cont">
+    <p class="tu"><img src="../image/鲁菜.jpg" alt=""></p>
+    <p>鲁菜是中国传统菜系之一，起源于山东，历史悠久。它讲究原料质地，调味咸鲜纯正，注重汤品的调制，烹调技法多样，尤以爆、扒技法独特。经典菜品有葱烧海参、糖醋鲤鱼等。鲁菜深受儒家文化影响，注重礼仪和排场，厨师技艺传承悠久。</p>
+</div>
+
+</body>
+</html>
